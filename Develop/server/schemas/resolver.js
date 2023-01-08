@@ -6,16 +6,15 @@ const resolvers = {
     Query: {
         me: async (parent, args, context) => {
             if (context.user) {
-                const user //
-                return user;//
+             
             }
             throw new AuthenticationError('You need to be logged in');
         },
     },
 
     Mutation: {
-        addUser: async (parent, { email, password }) => {
-          const user = await user.create({ name, email, password });
+        addUser: async (parent, { email, password }) => { //pass args or destructure?
+          const user = await user.create({ name, email, password }); //pass args or destructure?
           const token = signToken(user);
     
           return { token, user };
@@ -36,16 +35,31 @@ const resolvers = {
           const token = signToken(user);
           return { token, user };
         },
-        saveBook: async (parent, {  }, context) => {
+        saveBook: async (parent, { bookData }, context) => {
             if (context.user) {
-              const = await User.findOneAndUpdate(
-                { _id: profileId },
-                { $addToSet: { : {} } },
+              const updatedUser = await User.findByIdAndUpdate(
+                { _id: context.user._id },
+                { $addToSet: { savedBooks: bookData } }, // n does bookData need to be destructured?
                 { new: true },
               );
-              return ;
+              return updatedUser ;
             }
     
             throw new AuthenticationError('You need to be logged in!');
         },
-}
+        removeBook: async (parent, { bookId }, context) => {
+            if (context.user) {
+              const updatedUser = await User.findOneAndUpdate(
+                { _id: context.user._id },
+                { $addToSet: { savedBooks: bookId } }, // does bookId need to be destructured?
+                { new: true },
+              );
+              return updatedUser ;
+            }
+    
+            throw new AuthenticationError('You need to be logged in!');
+        },
+    },
+};
+
+module.exports = resolvers;
