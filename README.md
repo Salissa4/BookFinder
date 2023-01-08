@@ -108,7 +108,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 		
 		* `Mutation` type:
 
-			* `login`: Accepts an email and password as parameters; returns an `Auth` type.
+			<!-- * `login`: Accepts an email and password as parameters; returns an `Auth` type. -->
 
 			* `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type.
 
@@ -116,7 +116,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
 			
-		* `User` type:
+		<!-- * `User` type: -->
 
 			<!-- * `_id` -->
 
@@ -130,23 +130,23 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 		* `Book` type:
 
-			* `bookId` (Not the `_id`, but the book's `id` value returned from Google's Book API.)
+			<!-- * `bookId` (Not the `_id`, but the book's `id` value returned from Google's Book API.) -->
 
-			* `authors` (An array of strings, as there may be more than one author.)
+			<!-- * `authors` (An array of strings, as there may be more than one author.) -->
 
-			* `description`
+			<!-- * `description` -->
 
-			* `title`
+			<!-- * `title` -->
 
 			* `image`
 
 			* `link`
 
-		* `Auth` type:
+		<!-- * `Auth` type:
 
 			* `token`
 
-			* `user` (References the `User` type.)
+			* `user` (References the `User` type.) -->
 
 
 ### Front-End Specifications
