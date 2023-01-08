@@ -102,9 +102,9 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 	* `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
 
-		* `Query` type:
+		<!-- * `Query` type:
 
-			* `me`: Which returns a `User` type.
+			* `me`: Which returns a `User` type. -->
 		
 		* `Mutation` type:
 
@@ -118,15 +118,15 @@ You’ll need to complete the following tasks in each of these back-end files:
 			
 		* `User` type:
 
-			* `_id`
+			<!-- * `_id` -->
 
-			* `username`
+			<!-- * `username` -->
 
-			* `email`
+			<!-- * `email` -->
 
-			* `bookCount`
+			<!-- * `bookCount` -->
 
-			* `savedBooks` (This will be an array of the `Book` type.)
+			<!-- * `savedBooks` (This will be an array of the `Book` type.) -->
 
 		* `Book` type:
 

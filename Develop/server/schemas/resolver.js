@@ -6,7 +6,7 @@ const resolvers = {
     Query: {
         me: async (parent, args, context) => {
             if (context.user) {
-             
+             //
             }
             throw new AuthenticationError('You need to be logged in');
         },
