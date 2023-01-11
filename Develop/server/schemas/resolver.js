@@ -6,17 +6,17 @@ const resolvers = {
     Query: {
         me: async (parent, args, context) => {
             if (context.user) {
-             //
+              const userData = await User.findOne({ _id: context.user._id }).select('-__v -password');
+              return userData;
             }
             throw new AuthenticationError('You need to be logged in');
         },
     },
 
     Mutation: {
-        addUser: async (parent, { email, password }) => { //pass args or destructure?
-          const user = await user.create({ name, email, password }); //pass args or destructure?
+        addUser: async (parent, args) => {
+          const user = await user.create(args);
           const token = signToken(user);
-    
           return { token, user };
         },
         login: async (parent, { email, password }) => {
@@ -39,7 +39,7 @@ const resolvers = {
             if (context.user) {
               const updatedUser = await User.findByIdAndUpdate(
                 { _id: context.user._id },
-                { $addToSet: { savedBooks: bookData } }, // n does bookData need to be destructured?
+                { $push: { savedBooks: bookData } },
                 { new: true },
               );
               return updatedUser ;
@@ -51,7 +51,7 @@ const resolvers = {
             if (context.user) {
               const updatedUser = await User.findOneAndUpdate(
                 { _id: context.user._id },
-                { $addToSet: { savedBooks: bookId } }, // does bookId need to be destructured?
+                { $addToSet: { savedBooks: { bookId } } }, 
                 { new: true },
               );
               return updatedUser ;

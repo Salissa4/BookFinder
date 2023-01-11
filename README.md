@@ -100,19 +100,19 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 		**Hint**: Use the functionality in the `user-controller.js` as a guide.
 
-	* `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
+	<!-- * `typeDefs.js`: Define the necessary `Query` and `Mutation` types: -->
 
 		<!-- * `Query` type:
 
 			* `me`: Which returns a `User` type. -->
 		
-		* `Mutation` type:
+		<!-- * `Mutation` type: -->
 
 			<!-- * `login`: Accepts an email and password as parameters; returns an `Auth` type. -->
 
 			<!-- * `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type. -->
 
-			* `saveBook`: Accepts a book author's array, description, title, // bookId, image, and link// as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
+			<!-- * `saveBook`: Accepts a book author's array, description, title, // bookId, image, and link// as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!) -->
 <!-- 
 			* `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type. -->
 			
@@ -126,7 +126,7 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 			<!-- * `bookCount` -->
 
-			<!-- * `savedBooks` (This will be an array of the `Book` type.) -->
+			<!-- * `savedBooks` (This will be an array of the `Book` type.)
 
 		* `Book` type:
 
@@ -138,9 +138,9 @@ You’ll need to complete the following tasks in each of these back-end files:
 
 			<!-- * `title` -->
 
-			* `image`
+			<!-- * `image`
 
-			* `link`
+			* `link` --> 
 
 		<!-- * `Auth` type:
 
