@@ -15,9 +15,8 @@ Refactor a fully functioning Google Books API search engine built with a RESTful
 
 ## Usage
 
-- View on [Heroku](https://powerful-inlet-68279.herokuapp.com/)
-![BookFinder](./assets/demo.png)
-
+<!-- - View on [Heroku](https://powerful-inlet-68279.herokuapp.com/)  -->
+<!-- - ![BookFinder](./assets/demo.png) -->
 
 ## User Story
 
