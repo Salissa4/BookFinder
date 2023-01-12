@@ -6,8 +6,8 @@ Refactor a fully functioning Google Books API search engine built with a RESTful
 
 ## Table of Contents
 - [Usage](#usage)
-- [User Story](#userstory)
-- [Acceptance Criteria](#acceptancecriteria)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
 - [Credits](#credits)
 - [Badges](#badges)
 - [Contribute](#how-to-contribute)
